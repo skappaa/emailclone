@@ -37,7 +37,7 @@ var saveUserDataToLocalStorage = function () {
                 console.log("in login controller and redirected  to home page of user");  
                 }
                 else {
-                $scope.ErrorMessage = "Incorrect email or password";
+                $scope.ErrorSignInMessage = "Incorrect email or password";
                 }
             }                                     
         };
