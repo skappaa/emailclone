@@ -1,0 +1,47 @@
+
+<div class="container-fluid inbox">
+    
+    <div class="inboxView">
+       
+        <div class="msgHeader col-xs-4">
+             
+           <ul ng-repeat="msg in inboxMsgs">
+               <li class="listmsg" ng-click="ViewMsg($index)">  {{ msg.sender_name }} <span class="timeStamp">  {{ msg.created_at  }} </span> </br>
+                  {{ msg.title }}  </li>
+                <hr>
+            </ul>  
+        </div>
+
+         <div class="col-xs-8">
+             <div class="msgbody">
+                 <div class="displaymsg">
+                 
+                     <span style="align-content:right;"> <i class="fa fa-trash-o" aria-hidden="true" ng-click="DeleteMsg()"></i>  </span> 
+
+                     <p class="displaymsgline"> {{ sendername }} </br> To: {{ senderemail }}  <span class="timeStamp">  {{ time  }} </span> </br></p>
+                        <hr>
+                       <p class="displaymsgline">  {{ title }}  </p>
+                        <hr>
+                       <p class="displaymsgline"> {{ body }}  </p>   
+                        <hr>
+                     <button class="btn btn-primary" name="reply" class="btn_reply" ng-click="reply()"> Reply </button>
+                    <button class="btn btn-warning" name="cancel" class="btn_cancel" ng-click="cancel()"> Cancel </button>  
+
+
+
+                 </div>
+                
+
+            <div class="replyarea" ng-hide="replyarea">
+                Emai-ID : <input type="email" class="form-control replyemail" placeholder="{{ senderemail }}" ng-model="replyemail">  </br> &nbsp;
+                Subject : <input type="text" class="form-control replytitle" placeholder="RE : {{ title }}" ng-model="replytitle">  </br>  &nbsp;
+                Message: </br> <textarea name="msgbody" class="form-control replymsg" ng-model="replymsg" rows="20" cols="130"> </textarea> </br>  &nbsp;
+               <button class="btn btn-info" name="sendreply" class="btn_reply" ng-click="sendreply()"> Send </button>
+               
+            </div>
+         </div> 
+       </div>
+
+
+</div>
+</div>

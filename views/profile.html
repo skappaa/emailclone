@@ -1,0 +1,105 @@
+<div class="ProfilePage"> 
+
+     <div class="jumbotron">
+           <h1>{{ firstname }} {{ lastname }}</h1>   
+     </div>
+    
+    <div class="profilebody">
+        
+        <div class=" col-sm-offset-1 col-xs-4 col-sm-3">
+             <p> Place holder for displaying image </p>
+        </div>
+        
+        <div class="profiledata col-xs-6 col-sm-4">
+           
+            <p> First name :  {{firstname }} </p>
+            <p> Last name : {{ lastname }} </p>
+            <p> User name : {{ username }} </p>
+            <p> Email Address : {{ email }} </p>
+            <p> Phone Number : {{ phone }} </p>
+            <p> Location : {{ location }} </p> 
+            
+        </div>
+
+        <div class="col-xs-6 col-sm-4">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#updateModal">Edit Profile</button>
+           
+        </div>
+        
+        
+        
+        <!--Update profile Modal content -->
+        <div class="modal fade" id="updateModal" role="dialog">
+            <div class="modal-dialog">
+
+            <!--Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit Profile </h4>
+              </div>
+
+              <div class="modal-body">
+                  <form class="form-horizontal" ng-submit="UpdateProfile()">
+                      
+                      <div class="form-group">
+                        <label for="firstname" class="col-sm-8 control-label">First Name</label>
+                            <div class="col-sm-12">
+                              <input type="text" class="form-control" id="firstname" placeholder="First Name" ng-model="firstname" required>
+                            </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="lastname" class="col-sm-8 control-label">Last Name</label>
+                            <div class="col-sm-12">
+                              <input type="text" class="form-control" id="lastname" placeholder="Last Name" ng-model="lastname" required>
+                            </div>
+                      </div>
+                      <div class="form-group">
+                         <label for="email" class="col-sm-8 control-label">Email</label>
+                              <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="Email" ng-model="email" ng-disabled="editemail" required>
+                              </div>
+                      </div>
+                       <div class="form-group">
+                         <label for="phone" class="col-sm-8 control-label">Phone</label>
+                              <div class="col-sm-12">
+                                <input type="text" class="form-control" id="phone" placeholder="(XXX)XXX-XXXX" ng-model="phone" required>
+                              </div>
+                      </div>
+                      <div class="form-group">
+                         <label for="location" class="col-sm-8 control-label">Location</label>
+                              <div class="col-sm-12">
+                                <input type="text" class="form-control" id="location" placeholder="Location" ng-model="location" required>
+                              </div>
+                      </div>
+                      <div class="form-group">
+                         <label for="username" class="col-sm-8 control-label">User Name</label>
+                              <div class="col-sm-12">
+                                <input type="text" class="form-control" id="username" placeholder="User name" ng-model="username" required>
+                              </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="password" class="col-sm-8 control-label">Password</label>
+                            <div class="col-sm-12">
+                              <input type="password" class="form-control" id="password" placeholder="Password" ng-model="password" required>
+                            </div>
+                      </div>            
+                      <div class="form-group">
+                        <div class="col-sm-offset-5 col-sm-10">
+                          <button type="submit" class="btn btn-info" id="btn_update">Update Profile</button>
+                        </div>
+                      </div>
+                    <p class="ErrSignInMsg">{{ErrorMessage}} </p>
+                </form>
+
+              </div>
+           </div>
+          </div>
+       </div>
+        
+        
+        
+    </div>
+    
+</div>

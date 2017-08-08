@@ -1,0 +1,110 @@
+body{    
+ font-size: 20px;   
+}
+h4, h5 { align-content: center; color: coral;}
+.col-md-10 {
+    width: 90%;
+    white-space: nowrap;
+}
+.col-md-2 {
+    width: 10%;
+}
+p{
+    padding: 10px;
+}
+.SigninForm{
+ 
+}
+.loginForm{
+ float: right;    
+ padding: 20px;
+
+}
+.loginPElement{
+    clear:both;
+}
+.SignupForm{
+padding: 20px;
+margin: 20px;
+float:right;
+}
+.form-group{
+ padding: 5px;
+ margin: 5px;
+ max-width:60%;
+}
+#btn_SignIn{
+ padding: 5px;
+ margin: 5px; 
+ display: inline-block; 
+ color:white; 
+}
+#btn_SignUp{
+    
+}
+nav{
+padding: 20px;
+margin: 10px; 
+text-align: right;    
+}
+.jumbotron{
+ padding: 20px;
+ margin: 10px;
+ text-align: center;    
+}
+a{
+ padding: 20px;
+ margin: 10px;   
+ text-decoration: none;
+ color: coral;   
+}
+.inbox{
+ padding: 20px;
+ margin: 10px;
+}
+.sent{
+ padding: 20px;
+ margin: 10px;
+}
+.newmail{
+ padding: 10px;
+ margin: 10px;
+ border-left: 2px solid lightgray;
+ 
+}
+.newmailbody{
+  margin: 10px;
+  padding:10px;    
+}
+.inboxView{
+ padding: 10px;
+ margin: 10px;
+}
+.msgHeader{
+  border-left: 2px solid lightgray;   
+}
+.msgbody{
+ padding: 10px;
+ margin: 10px; 
+ border-left: 2px solid lightgray; 
+   
+}
+.replyarea{
+    padding: 10px;
+ margin: 10px; 
+}
+.listmsg{
+    list-style: none;
+    
+}
+.displaymsg{
+ 
+}
+.displaymsgline{
+  padding: 10px;
+  margin: 10px;     
+}
+
+.timeStamp{
+ text-align: right;
+}

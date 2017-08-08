@@ -1,0 +1,32 @@
+<div class="sent">
+    
+    <div class="sentView">
+        <div class="msgHeader col-xs-4">
+           <ul ng-repeat="msg in sentMsgs">
+               <li class="listmsg"  ng-click="ViewMsg($index)">  {{ msg.receiver_name }} <span class="timeStamp">  {{ msg.created_at  }} </span> </br>
+                  {{ msg.title }}  </li> <hr>
+            </ul>  
+        </div>
+         <div class="col-xs-8">
+          <div class="msgbody">
+             
+                <span style="align-content:right;"> <i class="fa fa-trash-o" aria-hidden="true" ng-click="DeleteMsg()"></i>  </span> 
+             <p class="displaymsgline"> {{ receivername }} </br> To: {{ receiveremail }}  &nbsp; &nbsp; &nbsp; &nbsp; <span class="timeStamp">  {{ time  }} </span> </br></p>
+                <hr>
+               <p class="displaymsgline">  {{ title }}      </p>
+                <hr>
+               <p class="displaymsgline"> {{ body }}    </p>   
+            
+             
+             
+             
+             </div>
+          
+      
+        </div>
+        
+        
+    </div>
+
+
+</div>

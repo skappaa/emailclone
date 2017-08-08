@@ -1,0 +1,19 @@
+<div class="MessagesPage"> 
+
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav nav-list">
+                    <li ng-repeat="tab in tabs">
+                        <a ui-sref="{{tab.state}}">{{tab.name}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <div ui-view="tabView"> </div> 
+            </div>
+        </div>
+    </div>
+    
+</div>
+
