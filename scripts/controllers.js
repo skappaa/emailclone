@@ -26,7 +26,7 @@ var saveUserDataToLocalStorage = function () {
         $scope.signin = function(){
             
             for(var i = 0; i < AllInfo.length; i++){
-                if( ( ( (AllInfo[i].username) || (AllInfo[i].email) ) == $scope.useremail )  && ((AllInfo[i].password) == $scope.password ))
+                if( ( ( (AllInfo[i].username) || (AllInfo[i].email) ) == $scope.useremail )  && ((AllInfo[i].password) == $scope.loginpassword ))
                 {
                     // saving present user index
                     PresentUserIndex = i;
